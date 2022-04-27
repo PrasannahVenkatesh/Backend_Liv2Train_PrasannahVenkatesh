@@ -5,6 +5,7 @@ import java.util.List;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
@@ -18,7 +19,7 @@ public class EnrollmentBean {
 	@Pattern(regexp = "^[A-Za-z0-9]+$",message="Invalid Center Code")
 	@Size(min=12,max=12)
 	private String centerCode;
-	@NotEmpty(message="Required Field")
+	@NotNull(message="Required Field")
 	private Address address;
 	private int studentCapacity;
 	private List<String> courseOffered;
