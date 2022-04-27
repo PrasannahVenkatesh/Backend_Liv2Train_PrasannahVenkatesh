@@ -30,7 +30,6 @@ public class EnrollmentBean {
 	@Size(min=10,max=10)
 	private String mobileNumber;
 
-	
 	public int getId() {
 		return id;
 	}
